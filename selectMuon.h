@@ -5,7 +5,7 @@ template <class RDF>
 auto selectMuon(RDF &&rdf)
 {
    using cVFr_t = const ROOT::RVec<float> &;
-   using cVBr_t = const ROOT::RVec<int> &;
+   using cVBr_t = const ROOT::RVec<bool> &;
 
    auto goodMuon = [](cVFr_t eta, cVFr_t pt, cVBr_t tightId) {
       // Return RVec<bool> and adjust buildPairs(), and hell breaks loose.
